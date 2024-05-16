@@ -76,12 +76,12 @@ export default function Footer() {
 
                     <li>
                         <a
-                            href="#"
+                            href="https://www.linkedin.com"
                             rel="noreferrer"
                             target="_blank"
                             className="text-gray-700 transition hover:text-gray-700/75"
                         >
-                            <span className="sr-only">Twitter</span>
+                            <span className="sr-only">LinkedIn</span>
                             <Linkedin />
                         </a>
                     </li>
