@@ -1,10 +1,11 @@
 import React from 'react'
 import Input from '../components/Input'
+import { Mail, PhoneCall } from 'lucide-react'
 
 function Contact() {
   return (
     <div className="mx-auto max-w-7xl px-4 mt-2">
-      <div className="flex flex-col space-y-8 pb-10 pt-12 md:pt-24">
+      <div className="flex flex-col space-y-8 pb-10 pt-12 md:pt-24 items-center">
         <div className="mx-auto max-w-max rounded-full border bg-gray-50 p-1 px-3">
           <p className="text-center text-xs font-semibold leading-normal md:text-sm">
             Share your thoughts
@@ -16,6 +17,10 @@ function Contact() {
         <p className="mx-auto max-w-4xl text-center text-base text-gray-600 md:text-xl">
         Got a question or feedback? We're here to help! Reach out to the Raso team for assistance with orders, inquiries, or partnership opportunities. Let's connect and ensure your experience with us is nothing short of exceptional.
         </p>
+        <div className='w-full max-w-4xl flex flex-wrap gap-6 justify-center md:justify-between items-center'>
+          <div className='flex gap-3 items-center'><PhoneCall color='#d32f32' size={40}/> <p className='text-lg font-semibold'>+92-3339382618</p></div>
+          <div className='flex gap-3 items-center'><Mail color='#d32f32' size={40}/> <p className='text-lg font-semibold'>rasointernational@gmail.com</p></div>
+        </div>
       </div>
       <div className="mx-auto max-w-7xl py-12 md:py-24">
         <div className="grid items-center justify-items-center gap-x-4 gap-y-10 md:grid-cols-2">
