@@ -37,7 +37,7 @@ function Distributors() {
             </div>
             <div className='w-full max-w-4xl flex items-center mx-auto gap-3 px-2'>
                 <input type='text' className='bg-transparent p-2 rounded-md border-2 border-gray-500 text-lg text-gray-600 h-10 flex-grow' placeholder='Search city/region or distributor' />
-                <button className='py-2 px-3 bg-old-brick-600 hover:bg-old-brick-600/70 text-center rounded'>Search</button>
+                <button className='py-2 px-3 bg-old-brick-600 hover:bg-old-brick-600/70 text-white text-center rounded'>Search</button>
             </div>
 
             <div className='w-full max-w-7xl px-4 gap-6 grid sm:grid-cols-2 lg:grid-cols-3 mx-auto items-center justify-center my-10'>
