@@ -34,7 +34,7 @@ function Header() {
     }
 
     return (
-        <header className='bg-old-brick-50 sticky top-0 w-full border-b shadow py-1 px-2 md:py-2 md:px-4'>
+        <header className='bg-old-brick-50 sticky top-0 w-full border-b shadow py-1 px-2 md:py-2 md:px-4 z-50'>
             {/* for large screens */}
             <div className='w-full max-w-7xl m-auto flex justify-between items-center'>
                 <Link to="/"><img src={logo} width={50} alt="Logo" /></Link>
