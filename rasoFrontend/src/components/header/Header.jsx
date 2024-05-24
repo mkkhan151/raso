@@ -56,7 +56,7 @@ function Header() {
             </div>
 
             {/* for mobile and tablet screens */}
-            {isMenuOpen && <div className='mt-3 py-1 w-full'>
+            {isMenuOpen && <div className='mt-3 py-1 w-full block md:hidden'>
                 <nav className='w-full'>
                     <ul className='w-full inline-flex flex-col space-y-1'>
                         {menuItems.map((item) => (
@@ -70,7 +70,7 @@ function Header() {
                         ))}
                     </ul>
                 </nav>
-                <Link to='/register' className='block w-full mt-3 bg-old-brick-600 hover:bg-transparent text-center text-white hover:text-baltic-sea outline-none border border-old-brick-600 rounded py-1 px-4 font-semibold'>Register</Link>
+                <Link to='/register' className='block w-full mt-3 bg-old-brick-600 hover:bg-transparent text-center text-white hover:text-baltic-sea outline-none border border-old-brick-600 rounded py-1 px-4 font-semibold'>Register Patient</Link>
             </div>}
         </header>
     )
