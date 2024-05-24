@@ -34,7 +34,7 @@ function Header() {
     }
 
     return (
-        <header className='bg-old-brick-50 sticky top-0 w-full border-b shadow py-1 px-2 md:py-2 md:px-4 z-50'>
+        <header className='bg-old-brick-100 sticky top-0 w-full border-b shadow py-1 px-2 md:py-2 md:px-4 z-50'>
             {/* for large screens */}
             <div className='w-full max-w-7xl m-auto flex justify-between items-center'>
                 <Link to="/"><img src={logo} width={50} alt="Logo" /></Link>
@@ -56,18 +56,21 @@ function Header() {
             </div>
 
             {/* for mobile and tablet screens */}
-            {isMenuOpen && <div className='block mt-2 md:hidden w-full'>
-                <nav>
-                    <ul className='flex flex-col items-center'>
+            {isMenuOpen && <div className='mt-3 py-1 w-full'>
+                <nav className='w-full'>
+                    <ul className='w-full inline-flex flex-col space-y-1'>
                         {menuItems.map((item) => (
-                            <li key={item.name}>
+                            <li key={item.name}
+                            className='w-full'
+                            >
                                 <NavLink to={item.path}
+                                className={({isActive}) => `font-semibold block w-full p-2 rounded-md hover:text-old-brick-600 hover:bg-baltic-sea-200 ${isActive ? 'text-old-brick-600 bg-baltic-sea-200' : 'text-baltic-sea bg-white'}`}
                                 >{item.name}</NavLink>
                             </li>
                         ))}
                     </ul>
                 </nav>
-                <button className='w-full mt-4'>Register</button>
+                <Link to='/register' className='block w-full mt-3 bg-old-brick-600 hover:bg-transparent text-center text-white hover:text-baltic-sea outline-none border border-old-brick-600 rounded py-1 px-4 font-semibold'>Register</Link>
             </div>}
         </header>
     )

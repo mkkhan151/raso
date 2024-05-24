@@ -5,7 +5,7 @@ import { Facebook, Instagram, Linkedin } from 'lucide-react';
 
 export default function Footer() {
     return (
-        <footer className="bg-old-brick-50 clear-both">
+        <footer className="bg-old-brick-100 clear-both">
             <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
                 <div className="flex justify-center text-teal-600">
                     <img src={logo} alt="Logo" width={100} />
@@ -79,7 +79,7 @@ export default function Footer() {
                             href="https://www.linkedin.com"
                             rel="noreferrer"
                             target="_blank"
-                            className="text-gray-700 transition hover:text-gray-700/75"
+                            className="text-[#0270ad] transition hover:text-[#0270ad]/75"
                         >
                             <span className="sr-only">LinkedIn</span>
                             <Linkedin />
