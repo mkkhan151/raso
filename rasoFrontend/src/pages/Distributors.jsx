@@ -1,33 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Distributor } from '../components';
+import axios from 'axios';
 
 function Distributors() {
-    const distributors = [
-        {
-            name: "Burak Traders",
-            city: "Mardan",
-            phone: "03441554346",
-            Address: "Pakistan Chowk, Bank Road, Mardan"
-        },
-        {
-            name: "Burak Traders",
-            city: "Mardan",
-            phone: "03441554346",
-            Address: "Pakistan Chowk, Bank Road, Mardan"
-        },
-        {
-            name: "Burak Traders",
-            city: "Mardan",
-            phone: "03441554346",
-            Address: "Pakistan Chowk, Bank Road, Mardan"
-        },
-        {
-            name: "Burak Traders",
-            city: "Mardan",
-            phone: "03441554346",
-            Address: "Pakistan Chowk, Bank Road, Mardan"
-        },
-    ]
+    const [distributors, setDistributors] = useState([]);
+
+    useEffect(() => {
+        axios.get('http://localhost/rasoBackend/distributors.php')
+      .then(response => {
+        setDistributors(response.data);
+      })
+      .catch(error => {
+        console.error('There was an error!', error);
+      });
+    }, []);
 
     return (
         <section className='w-full'>
@@ -40,9 +26,9 @@ function Distributors() {
                 <button className='py-2 px-3 bg-old-brick-600 hover:bg-old-brick-600/70 text-white text-center rounded'>Search</button>
             </div>
 
-            <div className='w-full max-w-7xl px-4 gap-6 grid sm:grid-cols-2 lg:grid-cols-3 mx-auto items-center justify-center my-10'>
+            <div className='w-full max-w-7xl px-4 gap-6 grid sm:grid-cols-2 lg:grid-cols-3 mx-auto justify-center my-10'>
                 {distributors.map((item) => (
-                    <Distributor distributor={item} />
+                    <Distributor key={item.id} distributor={item} />
                 ))}
             </div>
         </section>

@@ -15,6 +15,8 @@ export default function Footer() {
                     Where Comfort Meets Hygiene!Discover Premium Solutions for Your Family's Well-being.
                 </p>
 
+                <p className='mx-auto mt-4 max-w-lg text-center leading-relaxed text-gray-800'>&copy; 2024 Raso. All rights reserved.</p>
+
                 <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
                     <li>
                         <Link className="text-gray-700 transition hover:text-gray-700/75 hover:underline" to="/about"> About </Link>

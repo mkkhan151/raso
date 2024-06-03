@@ -3,7 +3,7 @@ import React, { useId } from 'react'
 function Input({label, type = 'text', placeholder, ...props}) {
     const id = useId();
     return (
-        <div className="grid w-full  items-center gap-1.5">
+        <div className="grid w-full  items-center gap-2">
             <label
                 className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                 htmlFor={id}

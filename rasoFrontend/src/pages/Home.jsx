@@ -12,9 +12,43 @@ function Home() {
           <h1 className='text-center text-2xl font-semibold max-w-sm md:max-w-xl lg:max-w-4xl text-white/95 md:text-3xl lg:text-5xl'>Welcome to Raso</h1>
           <p className='max-w-4xl text-center text-base text-white md:text-xl mt-8 md:mt-12'>Where Comfort Meets Hygiene!</p>
           <p className='max-w-4xl text-center text-base text-white md:text-xl'>Discover Premium Solutions for Your Family's Well-being</p>
-          <Link to='/products' className='px-2 py-1 md:px-4 md:py-2 mt-8 md:mt-12 bg-old-brick-600 hover:bg-transparent text-white text-base md:text-xl font-semibold border-2 border-old-brick-600'>Explore Now</Link>
+          <Link to='/about' className='px-2 py-1 md:px-4 md:py-2 mt-8 md:mt-12 bg-old-brick-600 hover:bg-transparent text-white text-base md:text-xl font-semibold border-2 border-old-brick-600'>Explore Now</Link>
         </div>
       </div>
+      <section className='w-full py-10 mt-10' id='products'>
+        <div className='w-full max-w-7xl mx-auto p-4'>
+          <div className='w-full max-w-4xl mx-auto flex justify-between items-center'>
+            <h2 className='text-base md:text-xl font-semibold'>What are we selling?</h2>
+            <Link to='/products' className='p-3 font-medium text-base md:text-xl hover:text-old-brick-600'>See All &rarr;</Link>
+          </div>
+          <div className='w-full max-w-4xl mx-auto mt-5 flex flex-wrap justify-center gap-5'>
+            <div className='w-[400px] flex flex-col pb-4 gap-y-4 rounded-lg border shadow'>
+              <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""
+                className='w-full rounded-lg'
+              />
+              <h3 className='text-base md:text-xl font-semibold px-4'>Powder Milk</h3>
+            </div>
+            <div className='w-[400px] flex flex-col pb-4 gap-y-4 rounded-lg border shadow'>
+              <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""
+                className='w-full rounded-lg'
+              />
+              <h3 className='text-base md:text-xl font-semibold px-4'>Powder Milk</h3>
+            </div>
+            <div className='w-[400px] flex flex-col pb-4 gap-y-4 rounded-lg border shadow'>
+              <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""
+                className='w-full rounded-lg'
+              />
+              <h3 className='text-base md:text-xl font-semibold px-4'>Powder Milk</h3>
+            </div>
+            <div className='w-[400px] flex flex-col pb-4 gap-y-4 rounded-lg border shadow'>
+              <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""
+                className='w-full rounded-lg'
+              />
+              <h3 className='text-base md:text-xl font-semibold px-4'>Powder Milk</h3>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className='w-full py-10 mt-10' id='regions'>
         <div className='w-full flex flex-col justify-center max-w-7xl mx-auto'>
           <h2 className='text-center text-xl font-semibold text-gray-900 md:text-4xl md:leading-10'>Our Regions</h2>
